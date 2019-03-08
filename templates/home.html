@@ -1,0 +1,11 @@
+<h1>WordCount</h1>
+welcome to WordCount website
+
+<br>
+
+<!-- that url goto urls.py -->
+<form action="{% url 'count' %}">
+    <textarea name="fulltextarea" cols=40 rows=10></textarea>
+    <br>
+    <input type="submit" value="Count"/>
+</form>

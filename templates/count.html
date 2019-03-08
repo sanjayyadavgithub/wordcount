@@ -1,0 +1,21 @@
+<h1>Counted</h1>
+<a href="{% url 'home' %}">Go to homepage</a>
+
+<br>
+
+<a href="{% url 'about' %}">Go to about</a>
+
+<h1>Pass Text</h1>
+<h4>{{textarea}}</h4>
+<br>
+<h1>Total word</h1>
+<h4>{{word}}</h4>
+<br>
+<h1>Worddictonary</h1>
+<h3>{{worddictionary}}</h3>
+
+{% for word,value in worddictionary %}
+{{ word }} = {{ value }}
+<br/>
+{% endfor %}
+

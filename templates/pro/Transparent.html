@@ -1,0 +1,126 @@
+<DOCTYPE html>
+<html>
+     <head>
+          <title> Transparent drop-down navbar </title>
+       <style>
+	     body{background-color:green;
+		      background-image:url('sanjay.jpg');
+			  background-size:cover;
+			  font-family:verdana;
+			  font-size:20px;
+			  margin:0;
+			  line-height:24px;
+			  }
+		 .navbar{
+                text-align:center;
+                width:100%;
+                background:blue;
+				opacity:0.5;
+                }
+          .navbar ul{
+                 margin:0;
+                 padding:0;
+                 list-style:none;
+                 position:relative;
+                 }
+           .navbar ul li a{
+                display:block;
+                padding25px;
+                color:white;
+                text-decoration:none;
+                width:150px;
+                }
+			.navbar ul:after{
+			    content: "";
+                clear:both;
+                display:block;
+                }
+             .navbar ul	li {
+                  float:left;
+                  list-style:none;
+                 }
+             .navbar ul ul {
+                   	display:none;
+                }
+              .navbar ul li:hover > ul{
+                   display:block;
+                   }
+                .navbar ul li:hover {
+                  background:black;
+                  transition:0.9s;
+                     }	
+               .navbar ul li:hover a{
+                    color:white;
+                    }
+               .navbar ul ul {
+                  background:black;
+                  padding:0;
+                  margin0;
+                  position:absolute;
+                   top:100%;
+                  }	
+                .navbar ul ul li {
+                  float:none;
+                  position:relative;
+                    }
+                .navbar ul ul li a{
+                   padding:25px;
+                   color:white;
+                   width:300px;
+                    text-align:left;
+                   }
+				.navbar ul ul li a:hover{
+				     background:lightblue;
+					 color:black;
+					 transition:0.9s;
+					 }
+				   
+	   </style>
+	 </head>
+     <body>
+     <div class="navbar">
+	  <ul>
+	     <li><a href="#">Home</a></li>
+		 <li><a href="#">Tutorials</a>
+	         <ul>
+              <li><a href="#">HTML</a></li>
+              <li><a href="#">CSS</a></li>
+              <li><a href="#">PHP</a></li>
+              <li><a href="#">ASP</a></li>
+              <li><a href="#">SQL</a></li>
+              <li><a href="#">More</a></li>			  
+		    </ul>
+		 </li>
+		 <li><a href="#">Sports</a>
+		    <ul>
+			   <li><a href="#">Football</a></li>
+			   <li><a href="#">Cricket</a></li>
+			   <li><a href="#">Baseball</a></li>
+			   <li><a href="#">Hockey</a></li>
+			   <li><a href="#">Boxing</a></li>
+			   <li><a href="#">More</a></li>
+			</ul>
+		 </li>
+		 <li><a href="#">News</a>
+		    <ul>
+			     <li><a href="#">ABP News</a></li>
+				  <li><a href="#">AAJ TAK News</a></li>
+				   <li><a href="#">SAHARA News</a></li>
+				    <li><a href="#">INDIA News</a></li>
+					 <li><a href="#">More</a></li>
+			</ul>
+		 </li>
+		 <li><a href="#">Conatact</a>
+		       <ul>
+			     <li><a href="#">Developer </a></li>
+				  <li><a href="#">Desiner</a></li>
+				   <li><a href="#">Analysier</a></li>
+				    <li><a href="#">More</a></li>
+			   </ul>
+		 
+		 </li>
+	  
+	  </ul>
+	 </div>
+     </body>
+</html>
